@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Huzzah World!</h1>
-<p>This is a Github Pages stub for Nate</p>
-</body>
+
+	<head>
+		<title>Nathaniel Lutz</title>
+
+		<script src="js/support/require.2.1.18.min.js"></script>
+		<script>
+			require(["js/configure"], function onConfigured(config) {
+				require(["jsx!main"]);
+			});
+		</script>
+	</head>
+
+	<body>
+	<div id="reactRoot"></div>
+	</body>
+
 </html>
