@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Nathaniel Lutz</title>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<script src="js/populateHeader.js"></script>
+	<script type="text/javascript">
+		window.onload = function customOnload() {
+			var headDiv = document.getElementById("header");
+			makeHeader(headDiv);
+		};
+	</script>
+</head>
 
-		<script src="js/support/require.2.1.18.min.js"></script>
-		<script>
-			require(["js/configure"], function onConfigured(config) {
-				require(["jsx!main"]);
-			});
-		</script>
-	</head>
+<body>
+	<div id="header"></div>
 
-	<body>
-	<div id="reactRoot"></div>
-	</body>
+	<div class="container">
+		<h1> Home Page! </h1>
+	</div>
+</body>
 
 </html>
