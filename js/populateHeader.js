@@ -14,6 +14,9 @@ function makeHeader(headerContainer) {
 	+ "				<li class='navbar-item'>"
 	+ "					<a class='navbar-link' href='resume.html'>Resume</a>"
 	+ "				</li>"
+	+ "				<li class='navbar-item'>"
+	+ "					<a class='navbar-link' href='creations.html'>Creations</a>"
+	+ "				</li>"
 	+ "			</ul>"
 	+ "		</div>"
 	+ "	</nav>";
