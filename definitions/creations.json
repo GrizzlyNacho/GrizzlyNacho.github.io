@@ -1,0 +1,21 @@
+{
+	"arr_creations": [
+		{ 
+			"title": "Diablo Necromancer Costume",
+			"finish_pic": "assets/necro/full_costume.jpg",
+			"overview": "I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I took some pictures along the way in case you're curious about the steps I took to make this.",
+			"arr_parts": [
+				{
+					"part_name": "Bone Helm",
+					"part_id": "necro_helm",
+					"arr_steps": [
+						{
+							"step_img": "assets/necro/full_costume.jpg",
+							"step_desc": "This is a long form description of a particular step. Lots of words. Many notes on how this should work and what you should pay attention to."
+						}
+					]
+				}
+			]
+		}
+	]
+}

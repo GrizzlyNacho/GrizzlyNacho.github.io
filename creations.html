@@ -37,10 +37,45 @@
 		</nav>
 	</div>
 
-	<div class="container">
-	<h1>Creations</h1>
-	<p>Sometimes the creative itch strikes and I make things offline. Sometimes I even take work in progress pictures on my phone. Please forgive the quality as these are often taken in the middle of a creative mess.</p>
-</div>
+		<div class="container">
+		<script>
+			window.toggleComponent = function toggleComponent(componentName) {
+				var component = document.getElementById(componentName);
+				if (component.style.display === "none") {
+					component.style.display = "block";
+				} else {
+					component.style.display = "none";	
+				}
+				
+			}
+		</script>
+		<div class="row">
+			<h1>Creations</h1>
+			<p>Sometimes the creative itch strikes and I make things offline. Sometimes I even take work in progress pictures on my phone. Please forgive the quality as these are often taken in the middle of a creative mess.</p>
+		</div>
+		<h3>Diablo Necromancer Costume</h3>
+		<div class="row">
+			<div class="one-half column">
+				<img src="assets/necro/full_costume.jpg" width="100%"/>
+			</div>
+			<div class="one-half column u-float-right">
+				<p>I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I took some pictures along the way in case you&#x27;re curious about the steps I took to make this.</p>
+				<a class="button u-full-width" onClick="toggleComponent('necro_helm')">Bone Helm</a>
+			</div>
+		</div>
+		<hr/>
+		<div id="necro_helm" style="display: none;">
+			<h4>Bone Helm</h4>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/necro/full_costume.jpg" width="50%" height="50%"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>This is a long form description of a particular step. Lots of words. Many notes on how this should work and what you should pay attention to.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
