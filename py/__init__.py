@@ -1,1 +1,1 @@
-__all__ = ["util", "generate_index", "generate_resume"]
+__all__ = ["util", "generate_index", "generate_resume", "generate_creations"]

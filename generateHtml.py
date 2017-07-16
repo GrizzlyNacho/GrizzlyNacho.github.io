@@ -7,3 +7,6 @@ util.writeHTMLFile("index.html", index)
 
 resume = generate_resume.generateResume()
 util.writeHTMLFile("resume.html", resume)
+
+creations = generate_creations.generateCreations()
+util.writeHTMLFile("creations.html", creations)
