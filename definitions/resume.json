@@ -1,0 +1,54 @@
+{
+	"summary": "I'm a programmer who likes to make games and to work with a great team. I've worked on four games and have been a lead on two of them. I like a mix of working with people and working with code.",
+	"arr_tech": [
+		{ "title": "Languages", "desc": "Java, SQL, PHP, HTML, JS, C++, and whatever is right for the job" },
+		{ "title": "Environments", "desc": "Unix, Windows, Mac" },
+		{ "title": "Methodologies", "desc": "Agile, Continuous Integration, Waterfall" },
+		{ "title": "Frameworks", "desc": "React, Twig" }
+	],
+	"arr_work": [
+		{ 
+			"title": "Big Viking Games - Lead Developer",
+			"duration": "Jan 2017 - Present",
+			"arr_desc": [
+				{ "desc": "Represent teams to Management."},
+				{ "desc": "Contribute to architecture and design decisions."},
+				{ "desc": "Continue full stack development across all areas of game and tools."}
+			]
+		},
+		{ 
+			"title": "Big Viking Games - Game Developer",
+			"duration": "May 2013 - Jan 2017",
+			"arr_desc": [
+				{ "desc": "Full stack development across UI, tracking, tools, large scale multiplayer features."},
+				{ "desc": "Stand in as lead when needed."}
+			]
+		},
+		{ 
+			"title": "Okino Computer Graphics - Software Developer (Coop)",
+			"duration": "Sep 2012 - Dec 2012",
+			"arr_desc": [
+				{ "desc": "Implemented a real-time 3D graphics pipeline using GLSL shaders with OpenGL and GLEW"},
+				{ "desc": "Improved performance through mix of profiling and research."}
+			]
+		},
+		{ 
+			"title": "Antic Entertainment - Junior Programmer (Coop)",
+			"duration": "May 2011 - Apr 2012",
+			"arr_desc": [
+				{ "desc": "Added features, refined UI, and improved game performance using AS3 and PHP"},
+				{ "desc": "Constructed core game mechanics, and designed and implemented content"},
+				{ "desc": "Developed a game from proof of concept up to alpha release"}
+			]
+		},
+		{ 
+			"title": "Trapeze Group - Automated QA Developer (Coop)",
+			"duration": "Sep 2010 - Dec 2010",
+			"arr_desc": [
+				{ "desc": "Implemented performance testing automation to produce meaningful metrics on platform efficiency"},
+				{ "desc": "Introduced regression, and stress testing for the core algorithm used in the application"},
+				{ "desc": "Wrote scripts in C# using Selenium for testing functionality"}
+			]
+		}
+	]
+}

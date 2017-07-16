@@ -1,0 +1,46 @@
+<div class="container">
+	<h1>Nathaniel Lutz</h1>
+	
+	<h4>TL;DR</h4>
+	<p>{{summary}}</p>
+	
+	<h4>Tech</h4>
+	<div class="row">
+		<ul>
+			{{#arr_tech}}
+			<li><b>{{title}}:</b> {{desc}}</li>
+			{{/arr_tech}}
+		</ul>
+	</div>
+
+	<h4>Work</h4>
+	{{#arr_work}}
+		<div>
+			<div class="row">
+				<div class="eight columns"><b>{{title}}</b></div>
+				<div class="four columns">{{duration}}</div>
+			</div>
+			<div class="row">
+				<ul>
+				{{#arr_desc}}
+					<li>{{desc}}</li>
+				{{/arr_desc}}
+				</ul>
+			</div>
+		</div>
+	{{/arr_work}}
+
+	<h4>Education</h4>
+		<div>
+			<div class="row">
+				<div class="eight columns"><b>University of Waterloo - Bachelor of Computer Science</b></div>
+				<div class="four columns">Sep 2009 - Apr 2014</div>
+			</div>
+			<div class="row">
+				<ul>
+					<li>Honours Computer Science Co-operative Program</li>
+					<li>Co-President of the Archery Club</li>
+				</ul>
+			</div>
+		</div>
+</div>
