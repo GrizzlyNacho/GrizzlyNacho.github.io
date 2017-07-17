@@ -3,15 +3,119 @@
 		{ 
 			"title": "Diablo Necromancer Costume",
 			"finish_pic": "assets/necro/full_costume.jpg",
-			"overview": "I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I took some pictures along the way in case you're curious about the steps I took to make this.",
+			"overview": "I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I had spent a little time in a workshop before taking this project on, but part of the appeal was that it would make me work in a number of different mediums if I wanted to achieve quality results. It's definitely a \"first costume\" and has some of that \"clearly the first time they've tried this\" look compared to many well known costumers, but I'm still pretty proud of it. I learned a lot making it and it was a lot of fun. I took a bunch of pictures of the progress (when I remembered), so feel free to follow along and see how I did things. You could use the series as instructions, but since this was my first time that may not be advisable. I'm sure there are things I could do better next time.",
 			"arr_parts": [
 				{
 					"part_name": "Bone Helm",
 					"part_id": "necro_helm",
 					"arr_steps": [
 						{
-							"step_img": "assets/necro/full_costume.jpg",
-							"step_desc": "This is a long form description of a particular step. Lots of words. Many notes on how this should work and what you should pay attention to."
+							"step_img": "assets/necro/helm/helm_mask_v1.jpg",
+							"step_desc": "Decide to jump right in after watching a few tutorials online. Rough out a mask pattern that matches your face and add straps to it on the sides and top. These pieces of foam are joined together with contact cement. I use contact cement for all of my foam joints, but I've been told hot glue can work as a reasonable replacement. It's just harder to get a nice seam with hot glue."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_dremel_mistakes.jpg",
+							"step_desc": "I was new at using a rotary tool. I made a bunch of mistakes when trying to round over edges, but they won't matter so long as we take care of them later. Remember that you can make mistakes as you go."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_mask_v1_salvage.jpg",
+							"step_desc": "Determine that you don't actually know better than the experts and just salvage what you can from your original strappy prototype to use for the mask proper. The plan is to make this fit with a little room for glasses to avoid needing to wear contacts, so we can probably make the mask a separate piece."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_brow_bulk.jpg",
+							"step_desc": "Faces aren't flat, so we need to add some dimension. Plop some extra foam on there. This is cheap floor mat foam, so it's textured on one side. The plan will be to grind in the general shapes we want, so we'll be getting rid of that undesirable texture shortly."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_brow_clean.jpg",
+							"step_desc": "Grind off all that texture and give the edges some shape with a rotary tool. This is still a pretty chunky face, so we'll want to do a little more shaping."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_brow_shape.jpg",
+							"step_desc": "Grind in even more. Get some definition on the bridge of the nose and the brow. The transition to the flush faces of the mask is pretty messy, but we'll clean it up later. At this point we're just aiming for good enough."
+						},
+						{
+							"step_img": "assets/necro/helm/tooth_plan.jpg",
+							"step_desc": "This mask/helmet will have teeth along the bottom ridge to mimic the top part of the mouth. Normal people teeth aren't all the same size and shape, but this is presumably the skull of some demon, so we'll make a template in card stock and use it to make our teeth kind of even. We can make them look a little less precise later."
+						},
+						{
+							"step_img": "assets/necro/helm/tooth_trace.jpg",
+							"step_desc": "Use our nifty template to draw out some teeth. This is one area where having a symmetrical mask will really help. I also drew out a larger nose cavity since the one I had looked a little too dainty."
+						},
+						{
+							"step_img": "assets/necro/helm/tooth_ridge_plan.jpg",
+							"step_desc": "Draw out some guides for carving in the ridges found underneath the top lip. At this stage it looks ridiculous. I was pretty convinced I was about to ruin it, but I kept going to see if I could prove myself wrong."
+						},
+						{
+							"step_img": "assets/necro/helm/tooth_ridge_carve.jpg",
+							"step_desc": "Use that trusty rotary tool with a roundish bit on the end and carve in those face ridges. It looks a little less dumb. All may not be lost."
+						},
+						{
+							"step_img": "assets/necro/helm/tooth_carve.jpg",
+							"step_desc": "Continue on with a small bit in the rotary tool and rough in the outlines of the teeth. I didn't chop off the gaps between the points at this point because they're providing some stability. Last thing I wanted was to mangle one of the teeth on the mask by accident in one of the coming steps and then have to do some foam surgery to correct it."
+						},
+						{
+							"step_img": "assets/necro/helm/cheek_depth.jpg",
+							"step_desc": "While we still have the face smooshed mostly flat, let's bulk up the cheeks and use the rotary tool to grind them down into a shape we like. This was done the same way as the brows and I didn't have a particular strategy other than grinding at it until it looked roughly right."
+						},
+						{
+							"step_img": "assets/necro/helm/mask_curve.jpg",
+							"step_desc": "There are times when working with foam feels magical. This was one of those times. You can heat foam up with a heat gun pretty easily. If you get a good uniform heat, you can get all kinds of complex curves into them that the foam will hold when it cools. The teeth and ridges looked considerably better once I'd put some of that curvature into the mask."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_base.jpg",
+							"step_desc": "Now it's time to work on the base. Follow Evil Ted's foam helmet tutorial and make a nice little cap that fits your dome really well. I punched some holes in with a soldering iron where I thought my horns would go. Turns out those holes didn't work very well, but making perfect holes with a soldering iron works really well in foam."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_mask_extend.jpg",
+							"step_desc": "As I mentioned, we want room for glasses in this helmet, so we need to extend the mask away from the dome of the cap. Pop a little spacer in at whatever level the mask will join with the foam cap."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_mask_attach.jpg",
+							"step_desc": "Now you can cement the mask (with the spacer) to the helmet base itself."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_mask_strap2.jpg",
+							"step_desc": "The mask is quite a ways away from the skull cap, so we need to add more foam straps (cemented on their edges) to make our new outside layer."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_mask_strap4.jpg",
+							"step_desc": "Add even more straps. The foam means we can put some curve into it. Also notice that it's easier to remove the texture on one side of the foam while it's still flat, so I'm doing that up to the ends before I cement the straps in. Why did I leave the ends of the straps textured? Simply because grinding at the end of the foam often resulted in the foam jumping around and the bit of the rotary tool would chew up my nice, clean gluing surface."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_gap_fill.jpg",
+							"step_desc": "The straps don't all line up nicely at the back, so I cut some custom sized chunks and hot glued them in."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_gap_clean.jpg",
+							"step_desc": "Now that the chunks have been glued in, I can rough grind the texture off them. It's not pretty, but we can clean everything up later."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_pattern_gap2.jpg",
+							"step_desc": "The two edges at the side that are missing straps aren't really going to benefit from more straps. I figured I'd make a couple custom pieces to fill those gaps, and to do that I did some very rough patterning. I taped some paper over it and used a pen to feel around for the edge of the foam. After I had that, I could cut it out. Repeat 3 more times (2 gaps that each needed front and back) and you're in business. While I tried to keep the helmet as symmetrical as possible, the straps weren't exactly the same size, so I couldn't reuse the template from the right on the left."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_gap.jpg",
+							"step_desc": "Once the piece is traced from your template, cut out of foam and had a bunch of the texture sanded off, it's time to heat it up and use your knee to dish it. This will make it easier to glue into place since it's already stretched the way it needs to be. You can dry fit it in the helmet between heatings to see how you're doing on mimicing the shape."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_horn_hole_plan.jpg",
+							"step_desc": "Glue those gap filler pieces in once they're all dished. You'll notice all kinds of black sharpie lines across my foam. I use those as registration marks and whenever possible I will maintain them all the way from initial pattern to final, shaped foam cut. Gluing in place exactly where you want is pretty easy when you have the registration marks since you just need to connect them. Go slow so you can get your seams just right. Contact cement doesn't mess around and you're not going to be able to remove it easily."
+						},
+						{
+							"step_img": "assets/necro/helm/helm_back_clean.jpg",
+							"step_desc": "The bottom, back edge of the helm looks awful as a hard rectangular edge, so we use the rotary tool to grind a better shape into it and round the edges over."
+						},
+						{
+							"step_img": "assets/necro/helm/FIXME.jpg",
+							"step_desc": ""
+						},
+						{
+							"step_img": "assets/necro/helm/FIXME.jpg",
+							"step_desc": ""
+						},
+						{
+							"step_img": "assets/necro/helm/FIXME.jpg",
+							"step_desc": "FIXME"
 						}
 					]
 				}
