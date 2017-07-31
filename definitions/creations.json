@@ -282,6 +282,144 @@
 							"step_desc": "Get some of that light brown in the nooks of the face and teeth. Clean and fresh props seldom look as convincing as worn ones, and this one's made of a skull. I think it could do with more paint, but for now we will call it good enough."
 						}
 					]
+				},
+				{
+					"part_name": "Greaves and Sabatons",
+					"part_id": "necro_greaves",
+					"arr_steps": [
+						{
+							"step_img": "assets/necro/legs/foot_pattern.jpg",
+							"step_desc": "Diablo's art style is gothic, so why not make some gothic sabatons (plated boots) for our costume? Start off with a paper patern with many overlapping 'plates' that it can be pinned directly to an old shoe. This pattern and method will mean that you can wear comfortable runners or something under the boot for long walks or wanders around a convention floor."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_foam.jpg",
+							"step_desc": "Once the pattern is finalized, it can be traced onto foam. Lots of foam. This is more EVA foam which is commonly used in floor mats. Number all those pieces so they can be tracked!"
+						},
+						{
+							"step_img": "assets/necro/legs/foot_cut.jpg",
+							"step_desc": "Cut out all of those foam pieces. It'll take a while. A sharp knife or a hot knife (like one you can get with a wood burner kit) will do the trick."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_dremel.jpg",
+							"step_desc": "Use that trusty rotary tool to clean up all of the edges. The flat side is the good side, so focus on making that side the presentable one. The back can be ground down a little bit to remove the hard edge, but don't lose sleep over it not being perfect."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_trim.jpg",
+							"step_desc": "Heat all of the foam pieces and give them some curvature. EVA foam will hold most complex curves that are made while it's hot. Sometimes heating up the sanded edges can make the little foam burrs stand out. A small pair of scissors can clean them up pretty handily."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_rivet.jpg",
+							"step_desc": "Bust out a soldering iron. Hot tools are really good for foam. A soldering iron melts a very clean hole of a pretty good size into foam. Hold it steady and push it straight in at a 90 degree angle, because that soldering iron can do some serious damage to those foam plates."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_testfit.jpg",
+							"step_desc": "Some brass paper fasteners (the knobs with long flaps at the back) make for exceptional fake rivets. They will also fit very nicely in the holes! Start putting the plates together using the fake rivets instead of with glue."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_testfit2.jpg",
+							"step_desc": "There, that's a bit wide, but that can be solved with strapping later."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_testfit3.jpg",
+							"step_desc": "Do it to both sides. Hopefully the labels for left and right were preserved this whole way."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_flex.jpg",
+							"step_desc": "This is where the rivets really pay off! Look at how well the sabaton articulates!"
+						},
+						{
+							"step_img": "assets/necro/legs/foot_paint_prep.jpg",
+							"step_desc": "Disassemble the sabatons and tape the pieces down to a tarp or something. It's time to paint! You can spot some gashes and chips in the foam here. That's actually intentional. I took that soldering iron from before and put some scrapes and cuts in wherever I thought it would make sense."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_prime.jpg",
+							"step_desc": "Prime them with black. Black is best as an undercoat for silvery metallic finishes. Multiple thin coats will work best. Once the pieces are all primed, paint them with some metallic paint. I used metallic auto paint because it provides pretty good metallics in spray cans. I don't have any pictures of the silver."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_rainbow_inside.jpg",
+							"step_desc": "The edges may not get fully painted with the silver. Fortunately these are for boots and painting on some black grime is totally acceptable to mask any rainbow colours that are hiding underneath."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_weather.jpg",
+							"step_desc": "The silver leaves the plates looking a little too pristine. Get some black paint, thin it out with some water, and smear it on your pretty piece. Wipe off the excess with a paper towel. This is a very common type of weathering to get sunken details darker and to bring out the dimension of the surface."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_weather2.jpg",
+							"step_desc": "Do it some more. Each piece needs to get weathered in this way. "
+						},
+						{
+							"step_img": "assets/necro/legs/foot_weather3.jpg",
+							"step_desc": "There are a lot of pieces. Do them all. The dents and cuts especially need to get some grit and dirt stuck in their deeper parts."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_weather4.jpg",
+							"step_desc": "After all the pieces are weathered, they can be reassembled. The brass rivets stood out too much at this point, so feel free to sand off the 'brass' coating on the silvery metallic base."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_rainbow.jpg",
+							"step_desc": "A downside with getting cheap floor mat foam is that it's multicoloured. After weathering the piece, I noticed that in the light you can see the bright foam colours reflected in the silvery paint! This is a cool effect, but not really what I wanted, so I blacked out the undersides further down."
+						},
+						{
+							"step_img": "assets/necro/legs/foot_no_rainbow.jpg",
+							"step_desc": "There. No more rainbow. When the weathering is complete, clear coat the piece with a matt clear spray finish."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_pattern.jpg",
+							"step_desc": "With sabatons done, we need something to protect the shins. That's where these greaves come in. First step is to pattern them. I could have made a tube, but that wouldn't have had any curve to conform to my leg at all and wouldn't have looked quite right."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_pattern2.jpg",
+							"step_desc": "Besides, look how much fun it is to cover your leg in aluminum foil and then duct tape it all up! This will give a form fitting pattern. Normally you need a friend to help with this, but since it was my leg, I could manage on my own. Marking out the rough lines of the pattern while it's still on really helps sort out the shape later."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_pattern_cut.jpg",
+							"step_desc": "Carefully cut the pattern off and trim the edges. Any area with a bubble or big round bulge can be 'darted'. Cut from the center of the bulge to the outside edge of the pattern. When the foam is connected back together the bulge can be recreated by reattaching along the seam."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_foam_shape.jpg",
+							"step_desc": "Cut two of those pieces out. If your legs aren't symmetrical then you better pattern both legs. From there you can heat shape them back to the shape of your calves and shins and then glue them together with more contact cement."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_foam_dremel.jpg",
+							"step_desc": "Use a rotary tool to clean up those edges again. Round them all over."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_bondo.jpg",
+							"step_desc": "These seams didn't turn out all that great, so we use more auto body filler to smooth them out. "
+						},
+						{
+							"step_img": "assets/necro/legs/leg_bondo2.jpg",
+							"step_desc": "Do both sides"
+						},
+						{
+							"step_img": "assets/necro/legs/leg_bondo_sand.jpg",
+							"step_desc": "Foam and filler can both be sanded, so be sure to sand it back down to the finish that you want. Wear a respirator."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_bondo_sand2.jpg",
+							"step_desc": "Take a marker and slash on some more places where the greaves could have suffered slices and cuts. Get those carved in with a hot or sharp (or both) knife."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_paint_base.jpg",
+							"step_desc": "Get those pieces primed and painted, but don't forget to heat seal them first."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_weather.jpg",
+							"step_desc": "Use some black paint that has been thinned to weather the greaves. Wipe them down where the metallics should shine through but let it sit in the crevices and battle damage."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_strap_hoops.jpg",
+							"step_desc": "For strapping, I didn't want to go with buckles, so I went with ones that could be laced up from the back. Use some D-rings, some nylon webbing and some sewing to rig up 16 little D-rings with handles."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_strap.jpg",
+							"step_desc": "These hoops can be hot glued down to the piece after the surface of the foam has been roughed up with sand paper or a knife."
+						},
+						{
+							"step_img": "assets/necro/legs/leg_fit.jpg",
+							"step_desc": "Try it on and lace it up!"
+						}
+					]
 				}
 			]
 		}
