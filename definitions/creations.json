@@ -420,6 +420,84 @@
 							"step_desc": "Try it on and lace it up!"
 						}
 					]
+				},
+				{
+					"part_name": "Belt",
+					"part_id": "necro_belt",
+					"arr_steps": [
+						{
+							"step_img": "assets/necro/belt/cape_plan.jpg",
+							"step_desc": "Belts are a big deal in Diablo 2. They hold all your potions and bits. I knew I wanted to attach the Necromancer's butt-cape/loin-cloth thing to the belt while also making it sturdy enough to support some trinkets later on if I want them. Start off with a paper pattern for the front and back cape-y bits. I both sketched them out and did some tests of how I wanted the belt loops to work on paper."
+						},
+						{
+							"step_img": "assets/necro/belt/cape_cut_pin.jpg",
+							"step_desc": "Use a chalk pencil or something to sketch out the pattern and cut out the fabric. Pin it to shape for consistency, but remember to leave a seam allowance."
+						},
+						{
+							"step_img": "assets/necro/belt/cape_layers_attach.jpg",
+							"step_desc": "The back cape is black on the outside and red on the inside. Hem up the pieces of cloth  and sew them together."
+						},
+						{
+							"step_img": "assets/necro/belt/belt_loop_plan.jpg",
+							"step_desc": "Use a chalk pencil or something to sketch out the plan for belt loops. These loops fold partially over to conceal the nylon strapping that will go through the loops. A leather belt would be stronger, but also thicker and heavier."
+						},
+						{
+							"step_img": "assets/necro/belt/cape_back_loops.jpg",
+							"step_desc": "Loops all done on the back part. It should be apparent at this point that sewing is not my forte. Part of doing this costume was to get me to learn a bunch of new things. Sewing is something I'd done a little of before, but I'd never done a proper project."
+						},
+						{
+							"step_img": "assets/necro/belt/belt_loops.jpg",
+							"step_desc": "Do up the belt loops for the front and back. Hemming edges will help the piece last longer. "
+						},
+						{
+							"step_img": "assets/necro/belt/cape_front.jpg",
+							"step_desc": "The front cape bit is very small and angular. Here's a view of it folded over to see the angles."
+						},
+						{
+							"step_img": "assets/necro/belt/cape_front_weather.jpg",
+							"step_desc": "Weathering fabric is pretty different from weathering foam parts. Paint can still be used (but should be thin), but sand paper and other rough or sharp surfaces should be used to damage the fabric and make it look like it has seen battle."
+						},
+						{
+							"step_img": "assets/necro/belt/cape_back_weather.jpg",
+							"step_desc": "Do it to the back too. Different fabrics will weather differently, but this can just contribute to the effect. The red peeking through the black looks pretty great to me!"
+						},
+						{
+							"step_img": "assets/necro/belt/buckle_detail.jpg",
+							"step_desc": "Every belt needs a buckle! This is just a simple oval buckle, but with a Diablo 2 Jah rune carved in. "
+						},
+						{
+							"step_img": "assets/necro/belt/buckle_shape.jpg",
+							"step_desc": "Slicing into the foam just partway through with a sharp knife and then blasting it with the heat gun will create excellent 'engraved' lines. Add a light curve while it's hot."
+						},
+						{
+							"step_img": "assets/necro/belt/buckle_paint.jpg",
+							"step_desc": "Give the belt the same painting and weathering treatment as the legs. Silver base with a black wash."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_plan.jpg",
+							"step_desc": "The belt needs a little something for around the sides. Why not make it look like a spine? Pattern out some vertebrae that will be cut and shaped from foam."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_dremel.jpg",
+							"step_desc": "Cut out the vertebrae from foam and sand in the details with a rotary tool."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_form.jpg",
+							"step_desc": "Heat and pressure will form up the bones to the desired shape and curve. There's a lift at one end so that they can be interlocked relatively easily."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_prime.jpg",
+							"step_desc": "Use a soldering iron to punch holes in the lowered bits and then tape them all down to a piece of cardboard for priming."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_assembly.jpg",
+							"step_desc": "More brass fasteners will allow for an articulated spine. Sand down the tops of the fasteners and hot glue them to a roughed up underside of the bone pieces. These can thread through the holes made with the soldering iron. Be sure to bend the flaps down into a small profile."
+						},
+						{
+							"step_img": "assets/necro/belt/spine_weather.jpg",
+							"step_desc": "Toss in some weathering in different shades of brown and these piecs are good to go! Just need to thread all the pieces together and attach some loops to fasten these to the belt."
+						}
+					]
 				}
 			]
 		}
