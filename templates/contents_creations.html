@@ -29,18 +29,19 @@
 		</div>
 		<hr/>
 		{{#arr_parts}}
-		<div id="{{part_id}}" style="display: none;">
+		<div id="{{part_id}}" style="display: none;" class="part_section">
 			<h4>{{part_name}}</h4>
 			{{#arr_steps}}
 			<div class="row">
 				<div class="one-half column">
-				<img src="{{step_img}}" width="50%" height="50%"/>
+				<img src="{{step_img}}" width="50%" height="50%" class="part_image"/>
 				</div>
 				<div class="one-half column u-float-right">
 					<p>{{step_desc}}</p>
 				</div>
 			</div>
 			{{/arr_steps}}
+			<a class="button u-full-width" onClick="toggleComponent('{{part_id}}')">Close {{part_name}}</a>
 		</div>
 		{{/arr_parts}}
 		{{/arr_creations}}
