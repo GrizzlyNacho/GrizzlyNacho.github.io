@@ -2,7 +2,9 @@
 	<h1>Nathaniel Lutz</h1>
 	
 	<h4>TL;DR</h4>
-	<p>{{summary}}</p>
+	<div class="row">
+		<p>{{summary}}</p>
+	</div>
 	
 	<h4>Tech</h4>
 	<div class="row">
@@ -15,18 +17,16 @@
 
 	<h4>Work</h4>
 	{{#arr_work}}
-		<div>
-			<div class="row">
-				<div class="eight columns"><b>{{title}}</b></div>
-				<div class="four columns">{{duration}}</div>
-			</div>
-			<div class="row">
-				<ul>
-				{{#arr_desc}}
-					<li>{{desc}}</li>
-				{{/arr_desc}}
-				</ul>
-			</div>
+		<div class="row">
+			<div class="eight columns"><b>{{title}}</b></div>
+			<div class="four columns">{{duration}}</div>
+		</div>
+		<div class="row">
+			<ul>
+			{{#arr_desc}}
+				<li>{{desc}}</li>
+			{{/arr_desc}}
+			</ul>
 		</div>
 	{{/arr_work}}
 

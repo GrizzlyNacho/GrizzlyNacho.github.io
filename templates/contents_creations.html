@@ -1,0 +1,48 @@
+	<div class="container">
+		<script>
+			window.toggleComponent = function toggleComponent(componentName) {
+				var component = document.getElementById(componentName);
+				if (component.style.display === "none") {
+					component.style.display = "block";
+				} else {
+					component.style.display = "none";	
+				}
+				
+			}
+		</script>
+		<div class="row">
+			<h1>Creations</h1>
+			<p>Sometimes the creative itch strikes and I make things offline. Sometimes I even take work in progress pictures on my phone. Please forgive the quality as these are often taken in the middle of a creative mess.</p>
+		</div>
+		{{#arr_creations}}
+		<h3>{{title}}</h3>
+		<div class="row">
+			<div class="one-half column">
+				<img src="{{finish_pic}}" width="100%"/>
+			</div>
+			<div class="one-half column u-float-right">
+				<p>{{overview}}</p>
+				{{#arr_parts}}
+				<a class="button u-full-width" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
+				{{/arr_parts}}
+			</div>
+		</div>
+		<hr/>
+		{{#arr_parts}}
+		<div id="{{part_id}}" style="display: none;" class="part_section">
+			<h4>{{part_name}}</h4>
+			{{#arr_steps}}
+			<div class="row">
+				<div class="one-half column">
+				<img src="{{step_img}}" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>{{step_desc}}</p>
+				</div>
+			</div>
+			{{/arr_steps}}
+			<a class="button u-full-width" onClick="toggleComponent('{{part_id}}')">Close {{part_name}}</a>
+		</div>
+		{{/arr_parts}}
+		{{/arr_creations}}
+	</div>

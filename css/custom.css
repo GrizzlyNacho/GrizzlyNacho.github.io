@@ -1,3 +1,14 @@
+.part_section {
+	border: 1px solid #bbb;
+	border-radius: 4px;
+}
+
+.part_image {
+	display: block;
+	margin: 0 auto;
+}
+
+
 /*****************************
   Navbar taken from Skeleton.css navbar 
 ******************************/
