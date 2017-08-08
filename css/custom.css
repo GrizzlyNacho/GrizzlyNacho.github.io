@@ -8,6 +8,11 @@
 	margin: 0 auto;
 }
 
+.part_active {
+	background-color: #AAA;
+	color: #FFF;
+}
+
 
 /*****************************
   Navbar taken from Skeleton.css navbar 

@@ -1,13 +1,35 @@
 	<div class="container">
 		<script>
-			window.toggleComponent = function toggleComponent(componentName) {
+			window.toggleComponent = function toggleComponent(componentName, b) {
+				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
-				if (component.style.display === "none") {
-					component.style.display = "block";
-				} else {
-					component.style.display = "none";	
+				if (component.style.display === "block") {
+					toggleOffTriggered = true;
 				}
-				
+
+				// Hide everything.
+				var currComponent = null;
+				var currButton = null;
+				{{#arr_creations}}
+					{{#arr_parts}}
+						currComponent = document.getElementById("{{part_id}}");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("{{part_id}}_button");
+						currButton.classList.remove("part_active");
+					{{/arr_parts}}
+				{{/arr_creations}}
+
+				if (toggleOffTriggered) { return };
+
+				//Show the one we care about.
+				var component = document.getElementById(componentName);
+				component.style.display = "block";
+				var button = document.getElementById(componentName + "_button");
+				button.classList.add("part_active");
+
+				// Scroll to the new section
+				location.hash = "#" + componentName + "_anchor";
 			}
 		</script>
 		<div class="row">
@@ -23,12 +45,13 @@
 			<div class="one-half column u-float-right">
 				<p>{{overview}}</p>
 				{{#arr_parts}}
-				<a class="button u-full-width" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
+				<a id="{{part_id}}_button" class="button u-full-width" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
 				{{/arr_parts}}
 			</div>
 		</div>
 		<hr/>
 		{{#arr_parts}}
+		<a name="{{part_id}}_anchor"></a>
 		<div id="{{part_id}}" style="display: none;" class="part_section">
 			<h4>{{part_name}}</h4>
 			{{#arr_steps}}

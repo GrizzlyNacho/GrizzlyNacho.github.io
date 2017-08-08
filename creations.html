@@ -39,14 +39,52 @@
 
 		<div class="container">
 		<script>
-			window.toggleComponent = function toggleComponent(componentName) {
+			window.toggleComponent = function toggleComponent(componentName, b) {
+				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
-				if (component.style.display === "none") {
-					component.style.display = "block";
-				} else {
-					component.style.display = "none";	
+				if (component.style.display === "block") {
+					toggleOffTriggered = true;
 				}
-				
+
+				// Hide everything.
+				var currComponent = null;
+				var currButton = null;
+						currComponent = document.getElementById("necro_helm");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("necro_helm_button");
+						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("necro_chest");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("necro_chest_button");
+						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("necro_pauldron");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("necro_pauldron_button");
+						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("necro_greaves");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("necro_greaves_button");
+						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("necro_belt");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("necro_belt_button");
+						currButton.classList.remove("part_active");
+
+				if (toggleOffTriggered) { return };
+
+				//Show the one we care about.
+				var component = document.getElementById(componentName);
+				component.style.display = "block";
+				var button = document.getElementById(componentName + "_button");
+				button.classList.add("part_active");
+
+				// Scroll to the new section
+				location.hash = "#" + componentName + "_anchor";
 			}
 		</script>
 		<div class="row">
@@ -60,14 +98,15 @@
 			</div>
 			<div class="one-half column u-float-right">
 				<p>I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I had spent a little time in a workshop before taking this project on, but part of the appeal was that it would make me work in a number of different mediums if I wanted to achieve quality results. It&#x27;s definitely a &quot;first costume&quot; and has some of that &quot;clearly the first time they&#x27;ve tried this&quot; look compared to many well known costumers, but I&#x27;m still pretty proud of it. I learned a lot making it and it was a lot of fun. I took a bunch of pictures of the progress (when I remembered), so feel free to follow along and see how I did things. You could use the series as instructions, but since this was my first time that may not be advisable. I&#x27;m sure there are things I could do better next time.</p>
-				<a class="button u-full-width" onClick="toggleComponent('necro_helm')">Bone Helm</a>
-				<a class="button u-full-width" onClick="toggleComponent('necro_chest')">Breastplate</a>
-				<a class="button u-full-width" onClick="toggleComponent('necro_pauldron')">Pauldrons</a>
-				<a class="button u-full-width" onClick="toggleComponent('necro_greaves')">Greaves and Sabatons</a>
-				<a class="button u-full-width" onClick="toggleComponent('necro_belt')">Belt</a>
+				<a id="necro_helm_button" class="button u-full-width" onClick="toggleComponent('necro_helm')">Bone Helm</a>
+				<a id="necro_chest_button" class="button u-full-width" onClick="toggleComponent('necro_chest')">Breastplate</a>
+				<a id="necro_pauldron_button" class="button u-full-width" onClick="toggleComponent('necro_pauldron')">Pauldrons</a>
+				<a id="necro_greaves_button" class="button u-full-width" onClick="toggleComponent('necro_greaves')">Greaves and Sabatons</a>
+				<a id="necro_belt_button" class="button u-full-width" onClick="toggleComponent('necro_belt')">Belt</a>
 			</div>
 		</div>
 		<hr/>
+		<a name="necro_helm_anchor"></a>
 		<div id="necro_helm" style="display: none;" class="part_section">
 			<h4>Bone Helm</h4>
 			<div class="row">
@@ -616,6 +655,7 @@
 			</div>
 			<a class="button u-full-width" onClick="toggleComponent('necro_helm')">Close Bone Helm</a>
 		</div>
+		<a name="necro_chest_anchor"></a>
 		<div id="necro_chest" style="display: none;" class="part_section">
 			<h4>Breastplate</h4>
 			<div class="row">
@@ -772,6 +812,7 @@
 			</div>
 			<a class="button u-full-width" onClick="toggleComponent('necro_chest')">Close Breastplate</a>
 		</div>
+		<a name="necro_pauldron_anchor"></a>
 		<div id="necro_pauldron" style="display: none;" class="part_section">
 			<h4>Pauldrons</h4>
 			<div class="row">
@@ -1016,6 +1057,7 @@
 			</div>
 			<a class="button u-full-width" onClick="toggleComponent('necro_pauldron')">Close Pauldrons</a>
 		</div>
+		<a name="necro_greaves_anchor"></a>
 		<div id="necro_greaves" style="display: none;" class="part_section">
 			<h4>Greaves and Sabatons</h4>
 			<div class="row">
@@ -1284,6 +1326,7 @@
 			</div>
 			<a class="button u-full-width" onClick="toggleComponent('necro_greaves')">Close Greaves and Sabatons</a>
 		</div>
+		<a name="necro_belt_anchor"></a>
 		<div id="necro_belt" style="display: none;" class="part_section">
 			<h4>Belt</h4>
 			<div class="row">
