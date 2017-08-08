@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<!--
+Welcome to the source!
+This is an auto-generated page from templates, so don't get put off by what looks like a lot of copy-pasta.
+-->
 
 <head>
 	<title>Home</title>
@@ -39,14 +43,13 @@
 
 		<div class="container">
 		<script>
-			window.toggleComponent = function toggleComponent(componentName, b) {
+			window.toggleComponent = function toggleComponent(componentName) {
 				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
 				if (component.style.display === "block") {
 					toggleOffTriggered = true;
 				}
 
-				// Hide everything.
 				var currComponent = null;
 				var currButton = null;
 						currComponent = document.getElementById("necro_helm");
@@ -77,13 +80,11 @@
 
 				if (toggleOffTriggered) { return };
 
-				//Show the one we care about.
 				var component = document.getElementById(componentName);
 				component.style.display = "block";
 				var button = document.getElementById(componentName + "_button");
 				button.classList.add("part_active");
 
-				// Scroll to the new section
 				location.hash = "#" + componentName + "_anchor";
 			}
 		</script>
