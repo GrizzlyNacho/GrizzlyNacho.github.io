@@ -10,3 +10,6 @@ util.writeHTMLFile("resume.html", resume)
 
 creations = generate_creations.generateCreations()
 util.writeHTMLFile("creations.html", creations)
+
+projects = generate_projects.generateProjects()
+util.writeHTMLFile("projects.html", projects)
