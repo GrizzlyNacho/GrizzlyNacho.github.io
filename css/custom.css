@@ -39,6 +39,7 @@
 .navbar-list {
 	list-style: none;
 	margin-bottom: 0;
+	margin-left: 1em;
 }
 .navbar-item {
 	position: relative;
