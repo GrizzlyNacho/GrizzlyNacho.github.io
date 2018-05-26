@@ -1,10 +1,69 @@
 {
 	"arr_projects": [
 		{
-			"title": "2018 Challenge (Jan) Air Hockey Maze",
-			"desc": "For 2018 I decided to set a personal goal of making a game-jam-like game every month on my own time. I have already had to ammend that slightly to accomodate for some life events I have in February, but I do intend to keep with the spirit of the goal for the rest of the year. January's submission is inspired by both my interest in procedural generation and the fun I had with an air hockey table my parents got me when I was little. The collisions are still a bit dicey (my first time doing continuous physics), but hopefully you get the idea. This one was entirely HTML5 and no libraries, which means I got to re-learn all of my linear algebra in order to do my own collisions.",
-			"src": "projects/airHockeyMaze/index.html",
-			"thumbnail": "assets/preview/airHockeyMaze.PNG"
+			"title": "YoWorld",
+			"link": "http://www.bigvikinggames.com/yoworld/",
+			"studio": "Big Viking Games",
+			"preview": "https://www.bigvikinggames.com/wp-content/uploads/2014/11/BVGYoWorldWebsite_PallinYos-Smaller.png",
+			"desc": "YoWorld is a social game on Facebook focusing on player social interactions and player generated experiences, both in character customization and in decorating fantastic digital spaces.",
+			"arr_highlights": [
+				"Lead a team of developers on a mix of features and tending a legacy project",
+				"Growing to senior programmer and then to a leadership role",
+				"Work on everything from content generation tools, to analytics, to features, to bug fixes, to customer service tools, to data management.",
+				"Developing a product for a large player base",
+				"Growing internal talent and interviewing new talent"
+			]
+		},
+		{
+			"title": "Dark Heroes",
+			"link": "https://www.bigvikinggames.com/dark-heroes/",
+			"studio": "Big Viking Games",
+			"preview": "https://www.bigvikinggames.com/wp-content/uploads/2014/11/DH_IpadAppStore_Breck_1334x750.jpg",
+			"desc": "A science fiction CCG built in web tech wrapped in a mobile app.",
+			"arr_highlights": [
+				"Leading the team to meet our ship date",
+				"Working in app-wrapped web tech that allowed for very fast turnaround on feature development",
+				"Developing tools to support the game"
+			]
+		},
+		{
+			"title": "Tiny Kingdoms",
+			"link": "https://www.bigvikinggames.com/tiny-kingdoms/",
+			"studio": "Big Viking Games",
+			"preview": "https://www.bigvikinggames.com/wp-content/uploads/2014/11/TK_Splash-Art_21.png",
+			"desc": "Tiny Kingdoms was a playful, fantasy, turn-based, strategy, web game. It featured both PvP and PvE elements and was built as one of the studio's first HTML5 titles.",
+			"arr_highlights": [
+				"Developing a game entirely in web tech with rendering entirely in the canvas",
+				"Working with the proprietary web game engine",
+				"Though my time was short on this game, collaborating with the artists on such a light-hearted game was excellent"
+			]
+		},
+		{
+			"title": "Kingdoms CCG",
+			"link": "https://www.kingdomsccg.com/",
+			"studio": "Antic Entertainment",
+			"preview": "https://steamcdn-a.akamaihd.net/steam/apps/330000/header.jpg?t=1463692347",
+			"desc": "Kingdoms CCG is a high fantasy collectible card game inspired by popular tabletop equivalents. Card combat was augmented with powerful hero characters the player chose for each deck, along with lane mechanics to split up the battlefield.",
+			"arr_highlights": [
+				"Being involved in the earliest stages and taking the game from a blank file to a working prototype",
+				"Pen-and-paper prototyping potential cards",
+				"Developing a robust AI system for allowing the computer to play arbitrary future cards intelligently that is still in use today",
+				"Collaborating with the team on the design of the cards",
+				"Building out the architecture for the product"
+			]
+		},
+		{
+			"title": "Platoonz",
+			"link": "",
+			"studio": "Antic Entertainment",
+			"preview": "https://pbs.twimg.com/profile_images/1772289564/icon_250x250_400x400.jpg",
+			"desc": "A side scrolling combat game with plenty of upgrades and wacky gear loadouts.",
+			"arr_highlights": [
+				"My first dive into professional game development",
+				"Feature development, both client and server side",
+				"Got to be involved in design decisions",
+				"Ported the game to mobile with Adobe Air"
+			]
 		}
 	]
 }

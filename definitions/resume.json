@@ -1,19 +1,19 @@
 {
-	"summary": "I'm a programmer who likes to make games and to work with a great team. I've worked on four games and have been a lead on two of them. I like a mix of working with people and working with code.",
+	"summary": "I'm a programmer who likes to make games and to work with a great team. I've been a part of four games and have been a lead on two of them. I like a mix of working with people and digging into hard problems.",
 	"arr_tech": [
-		{ "title": "Languages", "desc": "Java, SQL, PHP, HTML, JS, C++, and whatever is right for the job" },
+		{ "title": "Languages", "desc": "Java, SQL, PHP, HTML, JS, C++, and whatever is the right tool for the job" },
 		{ "title": "Environments", "desc": "Unix, Windows, Mac" },
-		{ "title": "Methodologies", "desc": "Agile, Continuous Integration, Waterfall" },
 		{ "title": "Frameworks", "desc": "React, Twig" }
 	],
 	"arr_work": [
 		{ 
-			"title": "Big Viking Games - Lead Developer",
+			"title": "Big Viking Games - Senior Developer (Acting Lead)",
 			"duration": "Jan 2017 - Present",
 			"arr_desc": [
-				{ "desc": "Represent teams to Management."},
+				{ "desc": "Represent team to management, and management to team."},
+				{ "desc": "Cultivate team's talent by hiring new quality employees and mentoring existing staff."},
 				{ "desc": "Contribute to architecture and design decisions."},
-				{ "desc": "Continue full stack development across all areas of game and tools."}
+				{ "desc": "Continue development across all areas of game and tools."}
 			]
 		},
 		{ 
@@ -21,7 +21,8 @@
 			"duration": "May 2013 - Jan 2017",
 			"arr_desc": [
 				{ "desc": "Full stack development across UI, tracking, tools, large scale multiplayer features."},
-				{ "desc": "Stand in as lead when needed."}
+				{ "desc": "Cultivate team's talent by hiring new quality employees and mentoring existing staff."},
+				{ "desc": "Stand in as lead whenever needed."}
 			]
 		},
 		{ 

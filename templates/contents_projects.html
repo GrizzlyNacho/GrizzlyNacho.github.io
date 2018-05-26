@@ -1,17 +1,23 @@
 	<div class="container">
 		<div class="row">
 			<h1>Projects</h1>
-			<p>I'm a programmer by trade, and I work full time at a studio, but sometimes the need strikes and I make some things in my own time.</p>
 		</div>
 		{{#arr_projects}}
-		<h3>{{title}}</h3>
-		<div class="row">
-			<div class="one-half column">
-				<img src="{{thumbnail}}" width="100%"/>
-			</div>
-			<div class="one-half column u-float-right">
-				<p>{{desc}}</p>
-				<a class="button" target="_blank" href="{{src}}">Try It Here</a>
+		<div class="project">
+			<h3>{{title}} - {{studio}}</h3>
+			<p>{{desc}}</p>
+			<div class="row">
+				<div class="one-half column">
+					<a href="{{link}}" target="_blank"><img src="{{preview}}" width="100%"/></a>
+				</div>
+				<div class="one-half column u-float-right">
+					<h5>Highlights</h5>
+					<ul>
+						{{#arr_highlights}}
+						<li>{{.}}</li>
+						{{/arr_highlights}}
+					</ul>
+				</div>
 			</div>
 		</div>
 		{{/arr_projects}}
