@@ -68,7 +68,6 @@ h1 {
 	display: block;
 }
 
-
 .part_section {
 	border: 1px solid #bbb;
 	border-radius: 4px;
@@ -80,8 +79,12 @@ h1 {
 }
 
 .part_active {
-	background-color: #AAA;
+	background-color: #65909A;
 	color: #FFF;
+}
+
+.part_active:hover {
+	color: #f6f6f6;
 }
 
 

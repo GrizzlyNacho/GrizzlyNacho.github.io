@@ -40,11 +40,15 @@
 				<img src="{{finish_pic}}" width="100%"/>
 			</div>
 			<div class="one-half column u-float-right">
-				<p>{{overview}}</p>
-				{{#arr_parts}}
-				<a id="{{part_id}}_button" class="button u-full-width" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
-				{{/arr_parts}}
+				{{#overview}}
+				<p>{{.}}</p>
+				{{/overview}}
 			</div>
+		</div>
+		<div class="row margin-t-50">
+			{{#arr_parts}}
+				<a id="{{part_id}}_button" class="button" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
+			{{/arr_parts}}
 		</div>
 		<hr/>
 		{{#arr_parts}}
