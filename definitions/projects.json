@@ -1,6 +1,7 @@
 {
 	"arr_projects": [
 		{
+			"left": true,
 			"title": "YoWorld",
 			"link": "http://www.bigvikinggames.com/yoworld/",
 			"studio": "Big Viking Games",
@@ -27,6 +28,7 @@
 			]
 		},
 		{
+			"left": true,
 			"title": "Tiny Kingdoms",
 			"link": "https://www.bigvikinggames.com/tiny-kingdoms/",
 			"studio": "Big Viking Games",
@@ -53,6 +55,8 @@
 			]
 		},
 		{
+			"left": true,
+			"last": true,
 			"title": "Platoonz",
 			"link": "",
 			"studio": "Antic Entertainment",

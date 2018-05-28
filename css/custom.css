@@ -30,6 +30,10 @@ h1 {
 	margin-bottom: 50px;
 }
 
+.margin-b-20 {
+	margin-bottom: 20px;
+}
+
 .margin-b-0 {
 	margin-bottom: 0;
 }
@@ -53,6 +57,15 @@ h1 {
 
 .text-highlight {
 	color: #65909A;
+}
+
+.section-highlight {
+	background-color: #F6F6F6;
+	padding: 20px;
+}
+
+.display-block {
+	display: block;
 }
 
 
