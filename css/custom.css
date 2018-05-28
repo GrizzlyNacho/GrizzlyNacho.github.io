@@ -1,3 +1,61 @@
+/* Boilerplate */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	text-align: center;
+}
+/* Helpers */
+
+.font-mono {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
+
+.margin-t-50 {
+	margin-top: 50px;
+}
+
+.margin-t-20 {
+	margin-top: 20px;
+}
+
+.margin-b-50 {
+	margin-bottom: 50px;
+}
+
+.margin-b-0 {
+	margin-bottom: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.font-light {
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+.text-highlight {
+	color: #65909A;
+}
+
+
 .part_section {
 	border: 1px solid #bbb;
 	border-radius: 4px;

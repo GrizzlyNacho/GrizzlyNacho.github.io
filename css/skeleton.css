@@ -287,6 +287,8 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+// Remove skeleton styling
 ul {
   list-style: circle inside; }
 ol {
@@ -302,7 +304,7 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
-
+*/
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

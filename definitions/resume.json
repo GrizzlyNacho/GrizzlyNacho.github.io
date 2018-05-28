@@ -3,7 +3,7 @@
 	"arr_tech": [
 		{ "title": "Languages", "desc": "Java, SQL, PHP, HTML, JS, C++, and whatever is the right tool for the job" },
 		{ "title": "Environments", "desc": "Unix, Windows, Mac" },
-		{ "title": "Frameworks", "desc": "React, Twig" }
+		{ "title": "Frameworks", "desc": "React, Twig, Moustache" }
 	],
 	"arr_work": [
 		{ 

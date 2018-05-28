@@ -1,25 +1,25 @@
 <div class="container">
-	<h1>Nathaniel Lutz</h1>
+	<h1 class="margin-t-50">Nathaniel Lutz</h1>
 	
-	<h4>TL;DR</h4>
+	<h4 class="margin-t-50 margin-b-0">TL;DR</h4>
 	<div class="row">
 		<p>{{summary}}</p>
 	</div>
 	
-	<h4>Tech</h4>
+	<h4 class="margin-t-20 margin-b-0">Tech</h4>
 	<div class="row">
 		<ul>
 			{{#arr_tech}}
-			<li><b>{{title}}:</b> {{desc}}</li>
+			<li><strong class="font-mono text-highlight">{{title}}:</strong> {{desc}}</li>
 			{{/arr_tech}}
 		</ul>
 	</div>
 
-	<h4>Work</h4>
+	<h4 class="margin-t-20 margin-b-0">Work</h4>
 	{{#arr_work}}
 		<div class="row">
-			<div class="eight columns"><b>{{title}}</b></div>
-			<div class="four columns">{{duration}}</div>
+			<div class="eight columns font-mono text-highlight"><strong>{{title}}</strong></div>
+		<div class="four columns font-light text-right">{{duration}}</div>
 		</div>
 		<div class="row">
 			<ul>
@@ -30,11 +30,11 @@
 		</div>
 	{{/arr_work}}
 
-	<h4>Education</h4>
+	<h4 class="margin-t-20 margin-b-0">Education</h4>
 		<div>
 			<div class="row">
-				<div class="eight columns"><b>University of Waterloo - Bachelor of Computer Science</b></div>
-				<div class="four columns">Sep 2009 - Apr 2014</div>
+				<div class="eight columns font-mono text-highlight"><strong>University of Waterloo - Bachelor of Computer Science</strong></div>
+				<div class="four columns font-light text-right">Sep 2009 - Apr 2014</div>
 			</div>
 			<div class="row">
 				<ul>
