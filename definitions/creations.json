@@ -3,6 +3,7 @@
 		{ 
 			"title": "Diablo Necromancer Costume",
 			"finish_pic": "assets/necro/full_costume.jpg",
+			"tag": "necro",
 			"overview": [
 				"I find costume making really fascinating, and decided to try my hand at it. The construction is mostly foam, but has body filler, resin, and sewn fabric parts too. I had spent a little time in a workshop before taking this project on, but part of the appeal was that it would make me work in a number of different mediums if I wanted to achieve quality results. It's definitely a \"first costume\" and has some of that \"clearly the first time they've tried this\" look compared to many well known costumers, but I'm still pretty proud of it. ",
 				"I learned a lot making it and it was a lot of fun. I took a bunch of pictures of the progress (when I remembered), so feel free to follow along and see how I did things. You could use the series as instructions, but since this was my first time that may not be advisable."
@@ -715,6 +716,7 @@
 		{ 
 			"title": "Bulbasaur Planter",
 			"finish_pic": "assets/bulbasaur/plant.jpg",
+			"tag": "bulbasaur",
 			"overview": [
 				"When I first got my 3D printer I ran it more or less non-stop for 3 months. I had seen some bulbasaur planters online and I like succulents, so I thought I'd have a crack at making my own!"
 			],
