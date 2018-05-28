@@ -31,16 +31,34 @@
 	{{/arr_work}}
 
 	<h4 class="margin-t-20 margin-b-0">Education</h4>
-		<div>
-			<div class="row">
-				<div class="eight columns font-mono text-highlight"><strong>University of Waterloo - Bachelor of Computer Science</strong></div>
-				<div class="four columns font-light text-right">Sep 2009 - Apr 2014</div>
-			</div>
-			<div class="row">
-				<ul>
-					<li>Honours Computer Science Co-operative Program</li>
-					<li>Co-President of the Archery Club</li>
-				</ul>
-			</div>
+	<div>
+		<div class="row">
+			<div class="eight columns font-mono text-highlight"><strong>University of Waterloo - Bachelor of Computer Science</strong></div>
+			<div class="four columns font-light text-right">Sep 2009 - Apr 2014</div>
 		</div>
+		<div class="row">
+			<ul>
+				<li>Honours Computer Science Co-operative Program</li>
+				<li>Co-President of the Archery Club</li>
+			</ul>
+		</div>
+	</div>
+
+	<h4 class="margin-t-20 margin-b-0">Community</h4>
+	<div class="row">
+		<ul>
+			{{#arr_community}}
+			<li><strong class="font-mono text-highlight">{{title}}:</strong> {{desc}}</li>
+			{{/arr_community}}
+		</ul>
+	</div>
+
+	<h4 class="margin-t-20 margin-b-0">Interests</h4>
+	<div class="row">
+		<ul>
+			{{#arr_interests}}
+			<li><strong class="font-mono text-highlight">{{title}}:</strong> {{desc}}</li>
+			{{/arr_interests}}
+		</ul>
+	</div>
 </div>

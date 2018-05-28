@@ -51,5 +51,37 @@
 				{ "desc": "Wrote scripts in C# using Selenium for testing functionality"}
 			]
 		}
+	],
+	"arr_community": [
+		{
+			"title": "IGDA 2017",
+			"desc": "Gave a talk on \"Getting into Games\""
+		},
+		{
+			"title": "GDC San Francisco 2015",
+			"desc": "Attended to learn from the community at large."
+		},
+		{
+			"title": "MIGS 2017",
+			"desc": "Attended to learn from the community at home."
+		},
+		{
+			"title": "Extra Life 2013-2017",
+			"desc": "Raising money for sick kids through games."
+		}
+	],
+	"arr_interests": [
+		{
+			"title": "Archery",
+			"desc": "Formerly competitively, now just as a hobby."
+		},
+		{
+			"title": "Costume Making",
+			"desc": "Fabricating costume pieces and props from assorted materials."
+		},
+		{
+			"title": "Cooking",
+			"desc": "Baking in particular, with a fondness for cinnamon."
+		}
 	]
 }
