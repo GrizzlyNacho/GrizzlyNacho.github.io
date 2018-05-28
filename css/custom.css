@@ -84,7 +84,8 @@ h1 {
 }
 
 .part_active:hover {
-	color: #f6f6f6;
+	background-color: #236B8E;
+	color: #FFF;
 }
 
 
