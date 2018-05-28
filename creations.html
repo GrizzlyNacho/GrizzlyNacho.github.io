@@ -82,6 +82,16 @@ This is an auto-generated page from templates, so don't get put off by what look
 
 						currButton = document.getElementById("necro_belt_button");
 						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("bulba_print");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("bulba_print_button");
+						currButton.classList.remove("part_active");
+						currComponent = document.getElementById("bulba_paint");
+						currComponent.style.display = "none";
+
+						currButton = document.getElementById("bulba_paint_button");
+						currButton.classList.remove("part_active");
 
 				if (toggleOffTriggered) { return };
 
@@ -1483,6 +1493,78 @@ This is an auto-generated page from templates, so don't get put off by what look
 				</div>
 			</div>
 			<a class="button u-full-width" onClick="toggleComponent('necro_belt')">Close Belt</a>
+		</div>
+		<h3>Bulbasaur Planter</h3>
+		<div class="row">
+			<div class="one-half column">
+				<img src="assets/bulbasaur/plant.jpg" width="100%"/>
+			</div>
+			<div class="one-half column u-float-right">
+				<p>When I first got my 3D printer I ran it more or less non-stop for 3 months. I had seen some bulbasaur planters online and I like succulents, so I thought I&#x27;d have a crack at making my own!</p>
+			</div>
+		</div>
+		<div class="row margin-t-50">
+				<a id="bulba_print_button" class="button" onClick="toggleComponent('bulba_print')">3D Print</a>
+				<a id="bulba_paint_button" class="button" onClick="toggleComponent('bulba_paint')">Paint</a>
+		</div>
+		<hr/>
+		<a name="bulba_print_anchor"></a>
+		<div id="bulba_print" style="display: none;" class="part_section">
+			<h4>3D Print</h4>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/print1.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>I tracked down a 3D model off of Thingiverse, dialed in the printer settings for chunky to cut down on print time, and let the printer work its magic.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/print2.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>The model was pretty large, so even with a chunky layer height it ran for around 15h before it was finally done printing.</p>
+				</div>
+			</div>
+			<a class="button u-full-width" onClick="toggleComponent('bulba_print')">Close 3D Print</a>
+		</div>
+		<a name="bulba_paint_anchor"></a>
+		<div id="bulba_paint" style="display: none;" class="part_section">
+			<h4>Paint</h4>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/prime.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>I don&#x27;t mind the look of layer lines on a low poly model like this, but a little bit of primer goes a long way for making them a little more subtle (plus it makes the paint stick way better).</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/paint1.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>The rest I did with basic acrylic paints. I brushed on a couple coats of teal for the main body.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/paint2.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>Some dark green for the &quot;spots&quot;. The model is low poly so I tried to make the spots sharper and more basic as well. I also put several coats of white into the eye sockets. White primer would have made this easier, but black is all I had on hand for plastic safe primer.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-half column">
+				<img src="assets/bulbasaur/paint3.jpg" width="50%" height="50%" class="part_image"/>
+				</div>
+				<div class="one-half column u-float-right">
+					<p>A little red for bulbasaur&#x27;s super creepy eyes, a little clearcoat and it&#x27;s done!</p>
+				</div>
+			</div>
+			<a class="button u-full-width" onClick="toggleComponent('bulba_paint')">Close Paint</a>
 		</div>
 	</div>
 </body>

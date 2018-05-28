@@ -711,6 +711,51 @@
 					]
 				}
 			]
+		},
+		{ 
+			"title": "Bulbasaur Planter",
+			"finish_pic": "assets/bulbasaur/plant.jpg",
+			"overview": [
+				"When I first got my 3D printer I ran it more or less non-stop for 3 months. I had seen some bulbasaur planters online and I like succulents, so I thought I'd have a crack at making my own!"
+			],
+			"arr_parts": [
+				{
+					"part_name": "3D Print",
+					"part_id": "bulba_print",
+					"arr_steps": [
+						{
+							"step_img": "assets/bulbasaur/print1.jpg",
+							"step_desc": "I tracked down a 3D model off of Thingiverse, dialed in the printer settings for chunky to cut down on print time, and let the printer work its magic."
+						},
+						{
+							"step_img": "assets/bulbasaur/print2.jpg",
+							"step_desc": "The model was pretty large, so even with a chunky layer height it ran for around 15h before it was finally done printing."
+						}
+					]
+				},
+				{
+					"part_name": "Paint",
+					"part_id": "bulba_paint",
+					"arr_steps": [
+						{
+							"step_img": "assets/bulbasaur/prime.jpg",
+							"step_desc": "I don't mind the look of layer lines on a low poly model like this, but a little bit of primer goes a long way for making them a little more subtle (plus it makes the paint stick way better)."
+						},
+						{
+							"step_img": "assets/bulbasaur/paint1.jpg",
+							"step_desc": "The rest I did with basic acrylic paints. I brushed on a couple coats of teal for the main body."
+						},
+						{
+							"step_img": "assets/bulbasaur/paint2.jpg",
+							"step_desc": "Some dark green for the \"spots\". The model is low poly so I tried to make the spots sharper and more basic as well. I also put several coats of white into the eye sockets. White primer would have made this easier, but black is all I had on hand for plastic safe primer."
+						},
+						{
+							"step_img": "assets/bulbasaur/paint3.jpg",
+							"step_desc": "A little red for bulbasaur's super creepy eyes, a little clearcoat and it's done!"
+						}
+					]
+				}
+			]
 		}
 	]
 }
