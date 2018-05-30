@@ -1,36 +1,31 @@
 	<div class="container">
 		<script>
-			function hasClass(element, className) {
-				return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
-			}
-
-			window.toggleComponent = function toggleComponent(componentName) {
+			window.toggleComponent = function toggleComponent() {
+				event.preventDefault();
+				var componentName = event.target.dataset.partName;
 				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
 				if (component.classList.contains("visible-block")) {
 					toggleOffTriggered = true;	
 				}
 
-				var currComponent = null;
-				var currButton = null;
-				{{#arr_creations}}
-					{{#arr_parts}}
-						currComponent = document.getElementById("{{part_id}}");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
+				var allParts = document.getElementsByClassName("part-section");
+				for (var idxPart = 0; idxPart < allParts.length; idxPart++) {
+					allParts[idxPart].classList.add("hidden");
+					allParts[idxPart].classList.remove("visible-block");
+				}
+				
+				var allButtons = document.getElementsByClassName("part-button");
+				for (var idxButton = 0; idxButton < allParts.length; idxButton++) {
+					allButtons[idxButton].classList.remove("toggle-button-active");
+				}
 
-						currButton = document.getElementById("{{part_id}}_button");
-						currButton.classList.remove("toggle-button-active");
-					{{/arr_parts}}
-				{{/arr_creations}}
-
-				if (toggleOffTriggered) { return };
-
-				var component = document.getElementById(componentName);
-				component.classList.add("visible-block");
-				component.classList.remove("hidden");
-				var button = document.getElementById(componentName + "_button");
-				button.classList.add("toggle-button-active");
+				if (!toggleOffTriggered) { 
+					component.classList.add("visible-block");
+					component.classList.remove("hidden");
+					var button = document.getElementById(componentName + "_button");
+					button.classList.add("toggle-button-active");
+				}				
 
 				location.hash = "#" + componentName + "_anchor";
 			}
@@ -56,16 +51,16 @@
 		</div>
 		<div class="row margin-t-20">
 			{{#arr_parts}}
-				<a id="{{part_id}}_button" class="button button-mobile-block" onClick="toggleComponent('{{part_id}}');">{{part_name}}</a>
+				<a data-part-name="{{part_id}}" id="{{part_id}}_button" class="button button-mobile-block part-button" onClick="toggleComponent();">{{part_name}}</a>
 			{{/arr_parts}}
 		</div>
 		{{#arr_parts}}
 		<a name="{{part_id}}_anchor"></a>
-		<div id="{{part_id}}" class="section-highlight hidden">
+		<div id="{{part_id}}" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">{{part_name}}</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('{{part_id}}'); preventDefault();" href="#">X</a>	
+					<a data-part-name="{{part_id}}" class="button-close" onClick="toggleComponent();" href="#{{part_id}}_anchor">X</a>	
 				</div>
 			</div>
 			{{#arr_steps}}
@@ -78,7 +73,7 @@
 				</div>
 			</div>
 			{{/arr_steps}}
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('{{part_id}}')">Close {{part_name}}</a>
+			<a  data-part-name="{{part_id}}" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close {{part_name}}</a>
 		</div>
 		{{/arr_parts}}
 		</div>

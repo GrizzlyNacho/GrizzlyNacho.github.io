@@ -53,69 +53,32 @@ This is an auto-generated page from templates, so don't get put off by what look
 
 		<div class="container">
 		<script>
-			function hasClass(element, className) {
-				return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
-			}
-
-			window.toggleComponent = function toggleComponent(componentName) {
+			window.toggleComponent = function toggleComponent() {
+				event.preventDefault();
+				var componentName = event.target.dataset.partName;
 				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
 				if (component.classList.contains("visible-block")) {
 					toggleOffTriggered = true;	
 				}
 
-				var currComponent = null;
-				var currButton = null;
-						currComponent = document.getElementById("necro_helm");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
+				var allParts = document.getElementsByClassName("part-section");
+				for (var idxPart = 0; idxPart < allParts.length; idxPart++) {
+					allParts[idxPart].classList.add("hidden");
+					allParts[idxPart].classList.remove("visible-block");
+				}
+				
+				var allButtons = document.getElementsByClassName("part-button");
+				for (var idxButton = 0; idxButton < allParts.length; idxButton++) {
+					allButtons[idxButton].classList.remove("toggle-button-active");
+				}
 
-						currButton = document.getElementById("necro_helm_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("necro_chest");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("necro_chest_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("necro_pauldron");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("necro_pauldron_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("necro_greaves");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("necro_greaves_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("necro_belt");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("necro_belt_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("bulba_print");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("bulba_print_button");
-						currButton.classList.remove("toggle-button-active");
-						currComponent = document.getElementById("bulba_paint");
-						currComponent.classList.add("hidden");
-						currComponent.classList.remove("visible-block");
-
-						currButton = document.getElementById("bulba_paint_button");
-						currButton.classList.remove("toggle-button-active");
-
-				if (toggleOffTriggered) { return };
-
-				var component = document.getElementById(componentName);
-				component.classList.add("visible-block");
-				component.classList.remove("hidden");
-				var button = document.getElementById(componentName + "_button");
-				button.classList.add("toggle-button-active");
+				if (!toggleOffTriggered) { 
+					component.classList.add("visible-block");
+					component.classList.remove("hidden");
+					var button = document.getElementById(componentName + "_button");
+					button.classList.add("toggle-button-active");
+				}				
 
 				location.hash = "#" + componentName + "_anchor";
 			}
@@ -138,18 +101,18 @@ This is an auto-generated page from templates, so don't get put off by what look
 			</div>
 		</div>
 		<div class="row margin-t-20">
-				<a id="necro_helm_button" class="button button-mobile-block" onClick="toggleComponent('necro_helm');">Bone Helm</a>
-				<a id="necro_chest_button" class="button button-mobile-block" onClick="toggleComponent('necro_chest');">Breastplate</a>
-				<a id="necro_pauldron_button" class="button button-mobile-block" onClick="toggleComponent('necro_pauldron');">Pauldrons</a>
-				<a id="necro_greaves_button" class="button button-mobile-block" onClick="toggleComponent('necro_greaves');">Greaves and Sabatons</a>
-				<a id="necro_belt_button" class="button button-mobile-block" onClick="toggleComponent('necro_belt');">Belt</a>
+				<a data-part-name="necro_helm" id="necro_helm_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Bone Helm</a>
+				<a data-part-name="necro_chest" id="necro_chest_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Breastplate</a>
+				<a data-part-name="necro_pauldron" id="necro_pauldron_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Pauldrons</a>
+				<a data-part-name="necro_greaves" id="necro_greaves_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Greaves and Sabatons</a>
+				<a data-part-name="necro_belt" id="necro_belt_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Belt</a>
 		</div>
 		<a name="necro_helm_anchor"></a>
-		<div id="necro_helm" class="section-highlight hidden">
+		<div id="necro_helm" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Bone Helm</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('necro_helm'); preventDefault();" href="#">X</a>	
+					<a data-part-name="necro_helm" class="button-close" onClick="toggleComponent();" href="#necro_helm_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -696,14 +659,14 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>Get some of that light brown in the nooks of the face and teeth. Clean and fresh props seldom look as convincing as worn ones, and this one&#x27;s made of a skull. I think it could do with more paint, but for now we will call it good enough.</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('necro_helm')">Close Bone Helm</a>
+			<a  data-part-name="necro_helm" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Bone Helm</a>
 		</div>
 		<a name="necro_chest_anchor"></a>
-		<div id="necro_chest" class="section-highlight hidden">
+		<div id="necro_chest" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Breastplate</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('necro_chest'); preventDefault();" href="#">X</a>	
+					<a data-part-name="necro_chest" class="button-close" onClick="toggleComponent();" href="#necro_chest_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -858,14 +821,14 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>Attach the shoulder straps to the base plates. Much more comfortable!</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('necro_chest')">Close Breastplate</a>
+			<a  data-part-name="necro_chest" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Breastplate</a>
 		</div>
 		<a name="necro_pauldron_anchor"></a>
-		<div id="necro_pauldron" class="section-highlight hidden">
+		<div id="necro_pauldron" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Pauldrons</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('necro_pauldron'); preventDefault();" href="#">X</a>	
+					<a data-part-name="necro_pauldron" class="button-close" onClick="toggleComponent();" href="#necro_pauldron_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -1108,14 +1071,14 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>Now it&#x27;s ready for paint and to be glued onto the pauldron!</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('necro_pauldron')">Close Pauldrons</a>
+			<a  data-part-name="necro_pauldron" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Pauldrons</a>
 		</div>
 		<a name="necro_greaves_anchor"></a>
-		<div id="necro_greaves" class="section-highlight hidden">
+		<div id="necro_greaves" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Greaves and Sabatons</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('necro_greaves'); preventDefault();" href="#">X</a>	
+					<a data-part-name="necro_greaves" class="button-close" onClick="toggleComponent();" href="#necro_greaves_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -1382,14 +1345,14 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>Try it on and lace it up!</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('necro_greaves')">Close Greaves and Sabatons</a>
+			<a  data-part-name="necro_greaves" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Greaves and Sabatons</a>
 		</div>
 		<a name="necro_belt_anchor"></a>
-		<div id="necro_belt" class="section-highlight hidden">
+		<div id="necro_belt" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Belt</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('necro_belt'); preventDefault();" href="#">X</a>	
+					<a data-part-name="necro_belt" class="button-close" onClick="toggleComponent();" href="#necro_belt_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -1536,7 +1499,7 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>Toss in some weathering in different shades of brown and these piecs are good to go! Just need to thread all the pieces together and attach some loops to fasten these to the belt.</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('necro_belt')">Close Belt</a>
+			<a  data-part-name="necro_belt" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Belt</a>
 		</div>
 		</div>
 		<div class="margin-t-50">
@@ -1550,15 +1513,15 @@ This is an auto-generated page from templates, so don't get put off by what look
 			</div>
 		</div>
 		<div class="row margin-t-20">
-				<a id="bulba_print_button" class="button button-mobile-block" onClick="toggleComponent('bulba_print');">3D Print</a>
-				<a id="bulba_paint_button" class="button button-mobile-block" onClick="toggleComponent('bulba_paint');">Paint</a>
+				<a data-part-name="bulba_print" id="bulba_print_button" class="button button-mobile-block part-button" onClick="toggleComponent();">3D Print</a>
+				<a data-part-name="bulba_paint" id="bulba_paint_button" class="button button-mobile-block part-button" onClick="toggleComponent();">Paint</a>
 		</div>
 		<a name="bulba_print_anchor"></a>
-		<div id="bulba_print" class="section-highlight hidden">
+		<div id="bulba_print" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">3D Print</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('bulba_print'); preventDefault();" href="#">X</a>	
+					<a data-part-name="bulba_print" class="button-close" onClick="toggleComponent();" href="#bulba_print_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -1577,14 +1540,14 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>The model was pretty large, so even with a chunky layer height it ran for around 15h before it was finally done printing.</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('bulba_print')">Close 3D Print</a>
+			<a  data-part-name="bulba_print" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close 3D Print</a>
 		</div>
 		<a name="bulba_paint_anchor"></a>
-		<div id="bulba_paint" class="section-highlight hidden">
+		<div id="bulba_paint" class="part-section section-highlight hidden">
 			<div class="row">
 				<h4 class="ten columns">Paint</h4>
 				<div class="two columns text-right">
-					<a class="button-close" onClick="toggleComponent('bulba_paint'); preventDefault();" href="#">X</a>	
+					<a data-part-name="bulba_paint" class="button-close" onClick="toggleComponent();" href="#bulba_paint_anchor">X</a>	
 				</div>
 			</div>
 			<div class="row">
@@ -1619,12 +1582,12 @@ This is an auto-generated page from templates, so don't get put off by what look
 					<p>A little red for bulbasaur&#x27;s super creepy eyes, a little clearcoat and it&#x27;s done!</p>
 				</div>
 			</div>
-			<a class="button u-full-width margin-t-20" onClick="toggleComponent('bulba_paint')">Close Paint</a>
+			<a  data-part-name="bulba_paint" class="button u-full-width margin-t-20" onClick="toggleComponent();">Close Paint</a>
 		</div>
 		</div>
 	</div>
 	<footer class="footer">
-		Copyright 2018 Nathaniel Lutz
+		Copyright 2018 Nathaniel Lutz. Email? It's nlutz91 at that domain Google owns.
 	</footer>
 </body>
 
