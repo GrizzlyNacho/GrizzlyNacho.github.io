@@ -1,0 +1,4 @@
+Todo:
+fix nav bar
+clean up onclick for sections to avoid inline js
+add footer handles

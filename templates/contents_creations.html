@@ -1,10 +1,14 @@
 	<div class="container">
 		<script>
+			function hasClass(element, className) {
+				return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+			}
+
 			window.toggleComponent = function toggleComponent(componentName) {
 				var toggleOffTriggered = false;
 				var component = document.getElementById(componentName);
-				if (component.style.display === "block") {
-					toggleOffTriggered = true;
+				if (component.classList.contains("visible-block")) {
+					toggleOffTriggered = true;	
 				}
 
 				var currComponent = null;
@@ -12,28 +16,33 @@
 				{{#arr_creations}}
 					{{#arr_parts}}
 						currComponent = document.getElementById("{{part_id}}");
-						currComponent.style.display = "none";
+						currComponent.classList.add("hidden");
+						currComponent.classList.remove("visible-block");
 
 						currButton = document.getElementById("{{part_id}}_button");
-						currButton.classList.remove("part_active");
+						currButton.classList.remove("toggle-button-active");
 					{{/arr_parts}}
 				{{/arr_creations}}
 
 				if (toggleOffTriggered) { return };
 
 				var component = document.getElementById(componentName);
-				component.style.display = "block";
+				component.classList.add("visible-block");
+				component.classList.remove("hidden");
 				var button = document.getElementById(componentName + "_button");
-				button.classList.add("part_active");
+				button.classList.add("toggle-button-active");
 
 				location.hash = "#" + componentName + "_anchor";
 			}
 		</script>
 		<div class="row">
-			<h1 class="margin-t-50">Creations</h1>
-			<p>Sometimes the creative itch strikes and I make things offline. Some of these side hobbies certainly aren't professional quality, but I had fun making them and wanted to share. Sometimes I even take work in progress pictures on my phone. Please forgive the quality as these are often taken in the middle of a creative mess.</p>
+			<div class="columns twelve">
+				<h1 class="margin-t-50">Creations</h1>
+				<p>Sometimes the creative itch strikes and I make things offline. Some of these side hobbies certainly aren't professional quality, but I had fun making them and wanted to share. Sometimes I even take work in progress pictures on my phone. Please forgive the quality as these are often taken in the middle of a creative mess.</p>
+			</div>
 		</div>
 		{{#arr_creations}}
+		<div class="margin-t-50">
 		<a name="{{tag}}"></a><h3>{{title}}</h3>
 		<div class="row">
 			<div class="one-half column">
@@ -45,28 +54,33 @@
 				{{/overview}}
 			</div>
 		</div>
-		<div class="row margin-t-50">
+		<div class="row margin-t-20">
 			{{#arr_parts}}
-				<a id="{{part_id}}_button" class="button" onClick="toggleComponent('{{part_id}}')">{{part_name}}</a>
+				<a id="{{part_id}}_button" class="button button-mobile-block" onClick="toggleComponent('{{part_id}}');">{{part_name}}</a>
 			{{/arr_parts}}
 		</div>
-		<hr/>
 		{{#arr_parts}}
 		<a name="{{part_id}}_anchor"></a>
-		<div id="{{part_id}}" style="display: none;" class="part_section">
-			<h4>{{part_name}}</h4>
+		<div id="{{part_id}}" class="section-highlight hidden">
+			<div class="row">
+				<h4 class="ten columns">{{part_name}}</h4>
+				<div class="two columns text-right">
+					<a class="button-close" onClick="toggleComponent('{{part_id}}'); preventDefault();" href="#">X</a>	
+				</div>
+			</div>
 			{{#arr_steps}}
 			<div class="row">
-				<div class="one-half column">
-				<img src="{{step_img}}" width="50%" height="50%" class="part_image"/>
+				<div class="four columns">
+					<img src="{{step_img}}" class="project-step-image"/>
 				</div>
-				<div class="one-half column u-float-right">
+				<div class="eight columns">
 					<p>{{step_desc}}</p>
 				</div>
 			</div>
 			{{/arr_steps}}
-			<a class="button u-full-width" onClick="toggleComponent('{{part_id}}')">Close {{part_name}}</a>
+			<a class="button u-full-width margin-t-20" onClick="toggleComponent('{{part_id}}')">Close {{part_name}}</a>
 		</div>
 		{{/arr_parts}}
+		</div>
 		{{/arr_creations}}
 	</div>

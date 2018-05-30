@@ -68,24 +68,61 @@ h1 {
 	display: block;
 }
 
-.part_section {
-	border: 1px solid #bbb;
-	border-radius: 4px;
+.button-mobile-block {
+	display: inline-block;
 }
 
-.part_image {
+@media (max-width: 750px) {
+	.button-mobile-block {
+		display: block;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.visible-inline {
+	display: inline;
+}
+
+.visible-block {
 	display: block;
-	margin: 0 auto;
 }
 
-.part_active {
+.visible-inline-block {
+	display: inline-block;
+}
+
+.button-close {
+	color: #ADADAD;
+	text-decoration: none;
+
+	font-weight: 900;
+}
+
+.project-step-image {
+	display: block;
+	margin: 5px auto;
+	width: 100%;
+}
+
+.toggle-button-active {
 	background-color: #65909A;
 	color: #FFF;
 }
 
-.part_active:hover {
+.toggle-button-active:hover {
 	background-color: #236B8E;
 	color: #FFF;
+}
+
+.footer {
+	background: #1A1A1A;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 50px;
+	line-height: 1;
 }
 
 
